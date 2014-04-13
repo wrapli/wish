@@ -1,4 +1,4 @@
-Wish
+Wrap.li
 ====
 
 Finding a wishlist app that does what I need (and preferably nothing else) has proved fruitless. Right now, BoxedUp has the best social experience (friending, reserving, good URLs), but Amazon has the best authoring experience (extensions for all browsers, a good bookmarklet and a nice editing interface).
@@ -11,3 +11,7 @@ What I need:
 * Multiple wish lists, with pretty URLs
 * Friending, probably symmetric to support reservations
 * Simple (potentially themeable) wish list views
+
+## Simplifying Assumptions
+* Mobile first
+* Hot link images

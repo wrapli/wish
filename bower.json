@@ -1,0 +1,29 @@
+{
+  "name": "wrap.li",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "wrap.li",
+  "authors": [
+    "Peter Wooley <peterwooley@gmail.com>"
+  ],
+  "description": "Front-end for Wrap.li, a gift list site.",
+  "keywords": [
+    "gift",
+    "wrap",
+    "list",
+    "presents"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember-data": "~1.0.0",
+    "ember-localstorage-adapter": "~0.2.0"
+  }
+}

@@ -1,0 +1,83 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  height:100%;
+}
+footer {
+  padding: 30px 0;
+}
+
+
+.navbar-inverse .navbar-brand {
+  font-size: 2em;
+}
+
+.navbar {
+  border:none;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    height:100%;
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    background: #1C090B;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas .list-group-item {
+    /*color:#fff;
+    background: none;*/
+    border:none;
+    padding:15px 15px;
+    margin-bottom:0;
+    border-radius: 0 !important;
+  }
+  .sidebar-offcanvas .avatar {
+    border-radius:3px;
+    margin-top:-6px;
+  }
+}
+

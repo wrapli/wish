@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wrap.li</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lily+Script+One|Istok+Web' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <script type="text/x-handlebars" data-template-name="index">
+      <div class="row-offcanvas row-offcanvas-left">
+        <div class="navbar navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="offcanvas">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand">Wrap.li</a>
+            </div>
+          </div><!-- /.container -->
+        </div><!-- /.navbar -->
+        <div class="sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <span href="#" class="list-group-item user"><img src="http://www.gravatar.com/avatar/1a3fb6e18b4412bdff7717133f2e5a58.jpg?s=25" class="avatar" /> Peter Wooley <span class="pull-right glyphicon glyphicon-transfer"></span></span>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list"></span> Lists <span class="badge">{{count}}</span></a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-gift"></span> Claimed <span class="badge">19</span></a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user"></span> Friends <span class="badge">6/2</span></a>
+          </div>
+        </div><!--/span-->
+
+        <div class="container">
+        {{#each}}
+          <li>{{title}}</li>
+        {{else}}
+          No lists.
+        {{/each}}
+        </div><!--/.container-->
+      </div>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/all.min.js"></script>
+    <script src="lib/app.min.js"></script>
+    <script src="http://livejs.com/live.js"></script>
+  </body>
+</html>
+
